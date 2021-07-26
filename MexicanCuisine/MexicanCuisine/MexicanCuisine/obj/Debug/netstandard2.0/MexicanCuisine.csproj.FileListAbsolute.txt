@@ -1,0 +1,15 @@
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\bin\Debug\netstandard2.0\MexicanCuisine.deps.json
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\bin\Debug\netstandard2.0\MexicanCuisine.dll
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\bin\Debug\netstandard2.0\ref\MexicanCuisine.dll
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\bin\Debug\netstandard2.0\MexicanCuisine.pdb
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.csproj.AssemblyReference.cache
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.AssemblyInfoInputs.cache
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.AssemblyInfo.cs
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.csproj.CoreCompileInputs.cache
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.dll
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\ref\MexicanCuisine.dll
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\MexicanCuisine.pdb
+C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine\obj\Debug\netstandard2.0\Views\TypeMealCardView.xaml.g.cs

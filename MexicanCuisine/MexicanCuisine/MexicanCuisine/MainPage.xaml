@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:MexicanCuisine.Views"
+             xmlns:vm="clr-namespace:MexicanCuisine.ViewModel"
+             x:Name="root"
+             x:Class="MexicanCuisine.MainPage">
+
+    <Grid ColumnDefinitions="Auto">
+        <StackLayout  Grid.Row="0" >
+            <Label Text="Mexican Cuisine"
+                   TranslationX="{Binding Source={x:Reference root},Path=Width}"
+                   x:Name="title"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="33"
+                   FontFamily="Title"/>
+
+            <Frame BackgroundColor="#f56a4d" Padding="24" CornerRadius="10"
+                   x:Name="frame1"
+                   TranslationX="{Binding Source={x:Reference root},Path=Width}"
+                   Margin="10"
+                   HasShadow="False"
+                   AnchorX=".50"
+                   AnchorY="1"
+                   
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+
+                <Image Source="https://image.flaticon.com/icons/png/512/4767/4767711.png"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="50"/>
+            </Frame>
+
+   
+            <!--<Slider x:Name="slider"
+                ValueChanged="slider_ValueChanged"
+                Maximum="360"/>-->
+
+            <ScrollView Orientation="Horizontal"
+                        HorizontalScrollBarVisibility="Never"
+                        
+                x:Name="scrollList">
+
+                <FlexLayout  Wrap="Wrap"
+                     x:Name="flexLayout"
+                     VerticalOptions="EndAndExpand"
+                     JustifyContent="SpaceBetween"
+                     IsClippedToBounds="True"
+                     Direction="Column"
+                     BindableLayout.ItemsSource="{Binding Foods,Mode=TwoWay}">
+
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <views:TypeMealCardView
+               
+                           
+                        >
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup>
+                                        <VisualState x:Name="tap">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="BLue"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </views:TypeMealCardView>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </FlexLayout>
+            </ScrollView>
+            <Label x:Name="lbl"
+                   Margin="50"/>
+
+        </StackLayout>
+
+
+    </Grid>
+
+</ContentPage>
