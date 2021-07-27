@@ -28,7 +28,6 @@ namespace ApiMexicanApp
         }
     
         public virtual DbSet<Food> Food { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TypeMeal> TypeMeal { get; set; }
     }
 }

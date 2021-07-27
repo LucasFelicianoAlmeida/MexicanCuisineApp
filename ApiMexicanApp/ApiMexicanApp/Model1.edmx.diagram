@@ -4,9 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7d298f5271034b21acf69d5a13da40f4" Name="Diagram1">
+      <Diagram DiagramId="15224acd6f1245e784d1f9d18968f85b" Name="Diagram1">
         <EntityTypeShape EntityType="MexicanCuisineModel.Food" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="MexicanCuisineModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MexicanCuisineModel.TypeMeal" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="MexicanCuisineModel.FK_Food_TypeMeal" ManuallyRouted="false" />
       </Diagram>

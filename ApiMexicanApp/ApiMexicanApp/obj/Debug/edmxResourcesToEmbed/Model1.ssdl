@@ -11,16 +11,6 @@
     <Property Name="ImgOutline" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="ImgBlack" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="TypeMeal">
     <Key>
       <PropertyRef Name="Id" />
@@ -42,7 +32,6 @@
   </Association>
   <EntityContainer Name="MexicanCuisineModelStoreContainer">
     <EntitySet Name="Food" EntityType="Self.Food" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TypeMeal" EntityType="Self.TypeMeal" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Food_TypeMeal" Association="Self.FK_Food_TypeMeal">
       <End Role="TypeMeal" EntitySet="TypeMeal" />
