@@ -10,17 +10,15 @@
         "projectUniqueName": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine.Android\\MexicanCuisine.Android.csproj",
         "projectName": "MexicanCuisine.Android",
         "projectPath": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine.Android\\MexicanCuisine.Android.csproj",
-        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\SENAI\\.nuget\\packages\\",
         "outputPath": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SENAI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -62,16 +60,14 @@
         "projectUniqueName": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine.csproj",
         "projectName": "MexicanCuisine",
         "projectPath": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine.csproj",
-        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\SENAI\\.nuget\\packages\\",
         "outputPath": "C:\\MexicanCuisineApp\\MexicanCuisine\\MexicanCuisine\\MexicanCuisine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SENAI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

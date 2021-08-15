@@ -12,10 +12,12 @@
 
   <ItemGroup>
     <None Remove="Font\DancingScriptRegular.ttf" />
+    <None Remove="Icons\Icons.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Font\DancingScriptRegular.ttf" />
+    <EmbeddedResource Include="Icons\Icons.ttf" />
   </ItemGroup>
 
   <ItemGroup>

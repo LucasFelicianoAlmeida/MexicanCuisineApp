@@ -575,8 +575,6 @@ C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android
 C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\SENAI\source\repos\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
-C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\NativeViewWrapperRenderer.java
-C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\typemaps.armeabi-v7a.o
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\bin\Debug\MexicanCuisine.Android.dll
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\bin\Debug\MexicanCuisine.Android.pdb
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\bin\Debug\com.companyname.mexicancuisine.apk
@@ -609,6 +607,7 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\lp\76\jl\files.cache
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\lp\79\jl\files.cache
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\lp\87\jl\files.cache
+C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\R.txt
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\R.cs.flag
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\MexicanCuisine.Android.csproj.CoreCompileInputs.cache
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\MexicanCuisine.Android.csproj.CopyComplete
@@ -632,13 +631,11 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\res\mipmap-xxhdpi\launcher_foreground.png
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\res\mipmap-xxxhdpi\icon.png
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\R.txt
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\uploadflags.txt
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\resolvedassemblies.hash
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\FormsViewGroup.dll
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\FormsViewGroup.pdb
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\Java.Interop.dll
-C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\machine.config
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\MexicanCuisine.Android.dll
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\MexicanCuisine.Android.pdb
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\MexicanCuisine.dll
@@ -794,6 +791,7 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\AndroidManifest.xml
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\__environment__.txt
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\mono\MonoRuntimeProvider.java
+C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\assets\machine.config
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\bin\mono.android.jar
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\static.flag
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\buildid.txt
@@ -820,7 +818,6 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\androidx\swiperefreshlayout\R.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\androidx\transition\R.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\androidx\viewpager2\R.java
-C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\com\companyname\mexicancuisine\R.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\com\google\android\material\R.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\com\google\android\material\snackbar\Snackbar_SnackbarActionClickImplementor.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc6414252951f3f66c67\CarouselViewAdapter_2.java
@@ -925,6 +922,7 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\LocalizedDigitsKeyListener.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\MasterDetailContainer.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\MasterDetailRenderer.java
+C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\NativeViewWrapperRenderer.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\NavigationRenderer.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper_InitialScrollListener.java
@@ -1125,11 +1123,13 @@ C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\De
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\mono\MonoPackageManager_Resources.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\xamarin\essentials\fileProvider.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\bin\packaged_resources
+C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\src\com\companyname\mexicancuisine\R.java
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\compressed_assemblies.arm64-v8a.s
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\compressed_assemblies.armeabi-v7a.s
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\compressed_assemblies.x86.s
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\compressed_assemblies.x86_64.s
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\typemaps.arm64-v8a.o
+C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\typemaps.armeabi-v7a.o
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\typemaps.x86.o
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\typemaps.x86_64.o
 C:\MexicanCuisineApp\MexicanCuisine\MexicanCuisine\MexicanCuisine.Android\obj\Debug\110\android\environment.arm64-v8a.o

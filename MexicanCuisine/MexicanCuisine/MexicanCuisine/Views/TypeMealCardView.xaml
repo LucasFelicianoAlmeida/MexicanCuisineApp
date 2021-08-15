@@ -2,17 +2,84 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MexicanCuisine"
-             Margin="10"
-             WidthRequest="100"
+             xmlns:icons="clr-namespace:WsTowers1.Icons"
              x:Class="MexicanCuisine.Views.TypeMealCardView">
-    <ContentView.Content>
-        <Frame>
-            <StackLayout >
+    <Frame CornerRadius="10"
+           HeightRequest="80"
+           WidthRequest="80"
+           Padding="10">
+        <StackLayout Spacing="5" >
+    
+             
                 <Image Source="{Binding Img}"
-                       HeightRequest="20"
-                       WidthRequest="20"/>
-                <Label Text="{Binding Name}"/>
-            </StackLayout>
-        </Frame>
-    </ContentView.Content>
+                       HeightRequest="40"
+                       WidthRequest="40"/>
+         
+            <Label Text="{Binding Name}"
+                       TextColor="#0B1B2D"
+                       TextDecorations="Underline"
+                       HorizontalTextAlignment="Center"
+                      />
+
+        </StackLayout>
+        <Frame.Triggers>
+            <DataTrigger Binding="{Binding IdTypeMeal}"
+                         Value="2"
+                         TargetType="Frame">
+                <Setter Property="Background">
+
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="1,1"
+                                                 EndPoint="1,0">
+                            <GradientStop Color="#ea5753" Offset=".1" />
+                            <GradientStop Color="#ffb88e" Offset=".8"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IdTypeMeal}"
+                         Value="1"
+                         TargetType="Frame">
+                <Setter Property="Background">
+
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="1,1"
+                                                 EndPoint="1,0">
+                            <GradientStop Color="#7c65a9" Offset=".1" />
+                            <GradientStop Color="#96d4ca" Offset=".8"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding IdTypeMeal}"
+                         Value="4"
+                         TargetType="Frame">
+                <Setter Property="Background">
+
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="1,1"
+                                                 EndPoint="1,0">
+                            <GradientStop Color="#ad336d" Offset=".1" />
+                            <GradientStop Color="#f8997d" Offset=".8"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IdTypeMeal}"
+                         Value="3"
+                         TargetType="Frame">
+                <Setter Property="Background">
+
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="1,1"
+                                                 EndPoint="1,0">
+                            <GradientStop Color="#392d69" Offset=".1" />
+                            <GradientStop Color="#b57bee" Offset=".8"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+        </Frame.Triggers>
+    </Frame>
 </ContentView>
