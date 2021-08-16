@@ -7,48 +7,52 @@
              BackgroundColor="#bdc3c7"
              x:Class="MexicanCuisine.MainPage">
 
-    <StackLayout BackgroundColor="Transparent">
-      
-        
-        <!--Lists-->
-        
-            <StackLayout Orientation="Horizontal" 
+    
+        <AbsoluteLayout >
+            <StackLayout BackgroundColor="Transparent">
+
+                <!--Lists-->
+
+                <StackLayout Orientation="Horizontal" 
                          Padding="10,10,10,0">
 
-                <Label Text="{Static icons:Icons.HamburguerMenu}"
+                    <Label Text="{Static icons:Icons.HamburguerMenu}"
                        FontSize="30"
                        TextColor="#0B1B2D"
                        FontFamily="Icon"/>
-                <Label Text="{Static icons:Icons.FullBatery}"
+                    <Label Text="{Static icons:Icons.FullBatery}"
                        FontFamily="Icon"
                        HorizontalOptions="EndAndExpand"
                        FontSize="30">
-                    <Label.Triggers>
-                        <DataTrigger Binding="{Binding Source={x:Reference root}, Path=Batery}"
+                        <Label.Triggers>
+                            <DataTrigger Binding="{Binding Source={x:Reference root}, Path=Batery}"
                                      TargetType="Label"
                                      Value="0">
-                            <Setter Property="TextColor" Value="Red"/>
-                            <Setter Property="Text" Value="{Static icons:Icons.LowBatery}"/>
-                        </DataTrigger>
-                        <DataTrigger Value="1"
+                                <Setter Property="TextColor" Value="Red"/>
+                                <Setter Property="Text" Value="{Static icons:Icons.LowBatery}"/>
+                            </DataTrigger>
+                            <DataTrigger Value="1"
                                      Binding="{Binding Source={x:Reference root}, Path=Batery}"
                                      TargetType="Label">
-                            <Setter Property="TextColor" Value="Yellow"/>
-                            <Setter Property="Text" Value="{Static icons:Icons.MediumBatery}"/>
-                        </DataTrigger>
-                        <DataTrigger Value="2"
+                                <Setter Property="TextColor" Value="Yellow"/>
+                                <Setter Property="Text" Value="{Static icons:Icons.MediumBatery}"/>
+                            </DataTrigger>
+                            <DataTrigger Value="2"
                                      Binding="{Binding Source={x:Reference root},Path=Batery}"
                                      TargetType="Label">
-                            <Setter Property="Text" Value="{Static icons:Icons.FullBatery}"/>
-                            <Setter Property="TextColor" Value="Green"/>
-                        </DataTrigger>
-                    </Label.Triggers>
-                </Label>
-            </StackLayout>
-        <Grid RowDefinitions="200,auto,auto" >
+                                <Setter Property="Text" Value="{Static icons:Icons.FullBatery}"/>
+                                <Setter Property="TextColor" Value="Green"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                </StackLayout>
 
-            <StackLayout >
-                <Label Text="Mexican Cuisine"
+
+
+                <Grid RowDefinitions="200,auto,auto" >
+
+                    <StackLayout >
+                        <Label Text="Mexican Cuisine"
                    TextColor="#0B1B2D"
                    TranslationX="{Binding Source={x:Reference root},Path=Width}"
                    x:Name="title"
@@ -59,7 +63,7 @@
                    FontSize="37"
                    FontFamily="Title"/>
 
-                <Frame BackgroundColor="White" Padding="24" CornerRadius="10"
+                        <Frame BackgroundColor="White" Padding="24" CornerRadius="10"
                    x:Name="frame1"
                    TranslationX="{Binding Source={x:Reference root},Path=Width}"
                    Margin="10"
@@ -70,25 +74,25 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center">
 
-                    <Image Source="https://image.flaticon.com/icons/png/512/1054/1054457.png"
+                            <Image Source="https://image.flaticon.com/icons/png/512/1054/1054457.png"
                    HeightRequest="50"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    WidthRequest="50"/>
-                </Frame>
-            </StackLayout>
+                        </Frame>
+                    </StackLayout>
 
 
-            <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                          Margin="10,0"
                          HorizontalOptions="Center"
                          Spacing="1"
                          Grid.Row="1"
                          BindableLayout.ItemsSource="{Binding Buttons}">
 
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate>
-                        <Button Text="{Binding Text}"
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Button Text="{Binding Text}"
                            Margin="0,0"
                                 Opacity="{Binding Opacity}"
                                 TranslationY="{Binding TranslationY}"
@@ -97,13 +101,13 @@
                            FontSize="16"
                         Command="{Binding BindingContext.EnterCommand,Source={x:Reference root} }"
                         CommandParameter="{Binding .}"/>
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
 
 
-            </StackLayout>
+                    </StackLayout>
 
-            <CarouselView  Grid.Row="2"
+                    <CarouselView  Grid.Row="2"
                     
                     
                         HeightRequest="80"
@@ -113,49 +117,49 @@
                         ItemsSource="{Binding Foods}"
                         x:Name="carousell">
 
-                    <CarouselView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Horizontal"  SnapPointsType="MandatorySingle" ItemSpacing="30" />
-                    </CarouselView.ItemsLayout>
+                        <CarouselView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Horizontal"  SnapPointsType="MandatorySingle" ItemSpacing="30" />
+                        </CarouselView.ItemsLayout>
 
-                    <CarouselView.EmptyView>
-                        <Grid ColumnDefinitions="*,7*,*">
-                            <Label HorizontalOptions="CenterAndExpand"
+                        <CarouselView.EmptyView>
+                            <Grid ColumnDefinitions="*,7*,*">
+                                <Label HorizontalOptions="CenterAndExpand"
                                Grid.Column="1"
                            Text="This section does not have anymore content"/>
-                        </Grid>
-                    </CarouselView.EmptyView>
+                            </Grid>
+                        </CarouselView.EmptyView>
 
 
-                    <CarouselView.ItemTemplate >
-                        <DataTemplate>
-                            <views:TypeMealCardView
+                        <CarouselView.ItemTemplate >
+                            <DataTemplate>
+                                <views:TypeMealCardView
                                 HeightRequest="80"
                
                            
                         >
 
-                                <views:TypeMealCardView.GestureRecognizers>
-                                    <DragGestureRecognizer DragStartingCommand="{Binding Source={x:Reference root},Path=BindingContext.DragStartingCommand}"
+                                    <views:TypeMealCardView.GestureRecognizers>
+                                        <DragGestureRecognizer DragStartingCommand="{Binding Source={x:Reference root},Path=BindingContext.DragStartingCommand}"
                                                            DragStartingCommandParameter="{Binding .}"/>
-                                </views:TypeMealCardView.GestureRecognizers>
-                            </views:TypeMealCardView>
-      
-                    </DataTemplate>
-                    </CarouselView.ItemTemplate>
+                                    </views:TypeMealCardView.GestureRecognizers>
+                                </views:TypeMealCardView>
+
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
 
 
 
-                </CarouselView>
-            </Grid>
+                    </CarouselView>
+                </Grid>
 
 
 
-        <StackLayout Background="White" WidthRequest="150"
+                <StackLayout Background="White" WidthRequest="150"
                      HeightRequest="300"
                      VerticalOptions="EndAndExpand"
                      
                     >
-            <Frame CornerRadius="2"
+                    <Frame CornerRadius="2"
                    HeightRequest="5"
                    Padding="0"
                    BackgroundColor="LightGray"
@@ -163,46 +167,81 @@
                    HorizontalOptions="Center"
                    WidthRequest="40"
                    HasShadow="False"/>
-            <Frame Padding="10">
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="{Static icons:Icons.Flag}"
+                    <Frame Padding="10">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Static icons:Icons.Flag}"
                        FontSize="30"
                            TextColor="#0B1B2D"
                        FontFamily="Icon"/>
-                    <Label Text="Orders"
+                            <Label Text="Orders"
                            TextColor="#0B1B2D"
                            FontSize="20"/>
-                </StackLayout>
-                <Frame.GestureRecognizers>
-                    <DropGestureRecognizer DragOverCommand="{Binding DropOverCommand}"/>
-                </Frame.GestureRecognizers>
-            </Frame>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <DropGestureRecognizer DragOverCommand="{Binding DropOverCommand}"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
 
-            <CollectionView ItemsSource="{Binding Pedidos}"
+                    <CollectionView ItemsSource="{Binding Pedidos}"
                                 x:Name="Orders"
                                 Margin="10,0">
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Span="2" HorizontalItemSpacing="50" VerticalItemSpacing="20" Orientation="Vertical"/>
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <views:TypeMealCardView Margin="20"/>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Span="2" HorizontalItemSpacing="50" VerticalItemSpacing="20" Orientation="Vertical"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <views:TypeMealCardView Margin="20"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
 
-            </CollectionView>
-            <Button Text="Order now" Margin="10">
-                <Button.Triggers>
-                    <DataTrigger TargetType="Button"
+                    </CollectionView>
+                    <Button Text="Order now" Margin="10">
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button"
                                  Binding="{Binding Source={x:Reference Orders},Path=ItemsSource.Count}"
                                  Value="0">
-                        <Setter Property="IsVisible" Value="False"/>
-                    </DataTrigger>
-                </Button.Triggers>
-            </Button>
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
 
-        </StackLayout>
+                </StackLayout>
 
-    </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="#AA000000"
+                 AbsoluteLayout.LayoutBounds="1,1,1,1"
+                 AbsoluteLayout.LayoutFlags="All"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+            <Frame Margin="30"
+               CornerRadius="6"
+               AbsoluteLayout.LayoutBounds=".5,.5"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+            >
+                <StackLayout>
+                    <StackLayout >
+                        <Label Text="Hi, I am Maria Bonita. Welcome back to Mexican Cuisine. Always remember...If you have any doubt always call me..."
+                       TextColor="#0B1B2D"/>
+
+                        <StackLayout  Orientation="Horizontal"
+                             >
+                    <Image Source="https://img-premium.flaticon.com/png/512/1691/premium/1691045.png?token=exp=1629047635~hmac=287e7b1d80b02a3b18315b2cdca18027"
+                           HeightRequest="70"
+                           x:Name="maria"
+                           HorizontalOptions="Start"/>
+                          
+
+                            <Button Text="Ok"
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            Clicked="LayoutMariaTo"
+                            HorizontalOptions="CenterAndExpand"
+                            Margin="10"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    
 
 </ContentPage>

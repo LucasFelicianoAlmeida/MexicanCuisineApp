@@ -174,5 +174,13 @@ namespace MexicanCuisine
         {
             //vm.SliderValue = slider.Value;
         }
+
+        private void LayoutMariaTo(object sender, EventArgs e)
+        {
+            //var rect = new Rect(Width - maria.Width, Height - maria.Height, maria.WidthRequest, maria.HeightRequest);
+            //AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.All);
+            //AbsoluteLayout.SetLayoutBounds(maria, rect);
+            //maria.LayoutTo(rect, 4000);
+        }
     }
 }

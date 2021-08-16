@@ -116,9 +116,9 @@ namespace MexicanCuisine.ViewModel
                 else
                 {
                     var foods = AllFoods.Where(x => x.IdTypeMeal == 4);
+                        Foods.Clear();
                     foreach (var item in foods)
                     {
-                        Foods.Clear();
                         Foods.Add(item);
                     }
                 }
