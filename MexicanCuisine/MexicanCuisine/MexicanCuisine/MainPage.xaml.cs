@@ -22,6 +22,9 @@ namespace MexicanCuisine
             InitializeComponent();
              BindingContext = vm;
 
+            var bc = BindingContext as BaseViewModel;
+            //bc.Buttons.Where(x => x.Text == "")
+
 
             Xamarin.Essentials.Battery.BatteryInfoChanged += (e, o) =>
             {
@@ -175,12 +178,30 @@ namespace MexicanCuisine
             //vm.SliderValue = slider.Value;
         }
 
-        private void LayoutMariaTo(object sender, EventArgs e)
+        private async void LayoutMariaTo(object sender, EventArgs e)
         {
-            //var rect = new Rect(Width - maria.Width, Height - maria.Height, maria.WidthRequest, maria.HeightRequest);
-            //AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.All);
-            //AbsoluteLayout.SetLayoutBounds(maria, rect);
-            //maria.LayoutTo(rect, 4000);
+            //Button
+            //var parentAnim = new Animation();
+
+            //var squash = new Animation(d =>
+            //{
+            //     okButton.HeightRequest = d;
+
+            //},okButton.HeightRequest, okButton.HeightRequest - 20);
+            //parentAnim.Add(0, 1, squash);
+            //parentAnim.Commit(this, "animation",rate: 16,length: 4000);
+
+
+            var rect = new Rect(Width - (50 + 10), Height - (50+ 10) , 50, 50);
+            var centerRect = new Rect(1, 1, 100, 100);
+            secondAbsolute.IsVisible = false;
+            await secondAbsolute.FadeTo(0);
+            secondAbsolute.Children.Remove(maria);
+
+            mainAbsoluteLayout.Children.Add(maria);
+            AbsoluteLayout.SetLayoutBounds(maria, rect);
+            AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.All);
+            await maria.LayoutTo(rect);
         }
     }
 }

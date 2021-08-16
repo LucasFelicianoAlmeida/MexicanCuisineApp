@@ -8,7 +8,7 @@
              x:Class="MexicanCuisine.MainPage">
 
     
-        <AbsoluteLayout >
+        <AbsoluteLayout  x:Name="mainAbsoluteLayout">
             <StackLayout BackgroundColor="Transparent">
 
                 <!--Lists-->
@@ -186,16 +186,16 @@
                                 x:Name="Orders"
                                 Margin="10,0">
                         <CollectionView.ItemsLayout>
-                            <GridItemsLayout Span="2" HorizontalItemSpacing="50" VerticalItemSpacing="20" Orientation="Vertical"/>
+                            <GridItemsLayout Span="2" HorizontalItemSpacing="20" VerticalItemSpacing="10"  Orientation="Vertical"/>
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <views:TypeMealCardView Margin="20"/>
+                                <views:TypeMealCardView />
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
 
                     </CollectionView>
-                    <Button Text="Order now" Margin="10">
+                    <Button Text="Order now" Margin="10,5,10,5">
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
                                  Binding="{Binding Source={x:Reference Orders},Path=ItemsSource.Count}"
@@ -208,11 +208,12 @@
                 </StackLayout>
 
             </StackLayout>
-            <BoxView BackgroundColor="#AA000000"
-                 AbsoluteLayout.LayoutBounds="1,1,1,1"
-                 AbsoluteLayout.LayoutFlags="All"
-                 HorizontalOptions="FillAndExpand"
-                 VerticalOptions="FillAndExpand"/>
+       
+        <AbsoluteLayout AbsoluteLayout.LayoutBounds="1,1,1,1"
+                        BackgroundColor="#AA000000"
+                        x:Name="secondAbsolute"
+                        IsVisible="True"
+                        AbsoluteLayout.LayoutFlags="All">
             <Frame Margin="30"
                CornerRadius="6"
                AbsoluteLayout.LayoutBounds=".5,.5"
@@ -223,25 +224,28 @@
                         <Label Text="Hi, I am Maria Bonita. Welcome back to Mexican Cuisine. Always remember...If you have any doubt always call me..."
                        TextColor="#0B1B2D"/>
 
-                        <StackLayout  Orientation="Horizontal"
+                        <Grid  ColumnDefinitions="*,*"
                              >
-                    <Image Source="https://img-premium.flaticon.com/png/512/1691/premium/1691045.png?token=exp=1629047635~hmac=287e7b1d80b02a3b18315b2cdca18027"
-                           HeightRequest="70"
-                           x:Name="maria"
-                           HorizontalOptions="Start"/>
-                          
+                            <Image Source="https://img-premium.flaticon.com/png/512/1691/premium/1691045.png?token=exp=1629121985~hmac=586453f7f45d944a3db750f38fe3ce27"
+                               HeightRequest="70"
+                                   WidthRequest="70"
+                               x:Name="maria"
+                               HorizontalOptions="Start"/>  
+
 
                             <Button Text="Ok"
+                                    x:Name="okButton"
                             Grid.Column="1"
                             HeightRequest="10"
                             Clicked="LayoutMariaTo"
                             HorizontalOptions="CenterAndExpand"
                             Margin="10"/>
-                        </StackLayout>
+                        </Grid>
                     </StackLayout>
                 </StackLayout>
             </Frame>
         </AbsoluteLayout>
+    </AbsoluteLayout>
     
 
 </ContentPage>
