@@ -192,16 +192,24 @@ namespace MexicanCuisine
             //parentAnim.Commit(this, "animation",rate: 16,length: 4000);
 
 
+            //TODO : How to use layoutTO
+
             var rect = new Rect(Width - (50 + 10), Height - (50+ 10) , 50, 50);
-            var centerRect = new Rect(1, 1, 100, 100);
+            var centerRect = new Rect(1, 1, 50, 50);
             secondAbsolute.IsVisible = false;
             await secondAbsolute.FadeTo(0);
-            secondAbsolute.Children.Remove(maria);
-
+            frame1.IsVisible = false;
+            //secondAbsolute.Children.Remove(maria);
+            var lastBound = maria.Bounds;
             mainAbsoluteLayout.Children.Add(maria);
-            AbsoluteLayout.SetLayoutBounds(maria, rect);
-            AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.All);
-            await maria.LayoutTo(rect);
+            await maria.LayoutTo(maria2.Bounds, 3000);
+
+
+
+
+            //AbsoluteLayout.SetLayoutBounds(maria, centerRect);
+            //AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.PositionProportional);
+            //await maria.LayoutTo(rect);
         }
     }
 }
