@@ -20,7 +20,7 @@ namespace MexicanCuisine.Service
                 if (client == null)
                 {
                     client = new HttpClient();
-                    client.BaseAddress = new Uri("http://10.0.2.2:5000/api/");
+                    client.BaseAddress = new Uri("http://10.0.2.2:5500/api/");
                 }
                 return client;
             }

@@ -112,25 +112,20 @@ namespace MexicanCuisine
         {
             base.OnAppearing();
 
-            await GetData();
-            await AnimationPosition();
-            carousell.HeightRequest = 80;
-            //StartAnimation();
             
-
+            await AnimationPosition();
+            await GetData();
+            carousell.HeightRequest = 80;
         }
 
         private async Task AnimationPosition()
         {
+            await Task.Delay(1500);
             var lastPos = carousell.Bounds.Location.Y;
             var y = carousell.Bounds.Y;
             var trans = carousell.Y;
             var animation = new Animation();
-            //var position = new Animation((d) =>
-            //{
-            //  scrollList.TranslationY = d;
-            //}, Height, 100);
-
+       
             var titlePosition = new Animation(p => title.TranslationX = p, title.TranslationX, 0);
             var framePostion = new Animation(p => frame1.TranslationX = p, frame1.TranslationX, 0);
             var rect = new Rectangle(0, 150, carousell.Width,500);
@@ -139,7 +134,9 @@ namespace MexicanCuisine
             animation.Add(.5,1, framePostion);
             //animation.Add(.99, 1, position);
             animation.Commit(this, "startPositionAnimation", 16, 2000, Easing.CubicInOut);
-            //await carousell.LayoutTo(rect, 250);
+
+            await Task.Delay(2000);
+
 
 
         }
@@ -164,7 +161,6 @@ namespace MexicanCuisine
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-
             }
         }
 
@@ -173,43 +169,40 @@ namespace MexicanCuisine
        
         }
 
-        private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            //vm.SliderValue = slider.Value;
-        }
+      
 
         private async void LayoutMariaTo(object sender, EventArgs e)
         {
-            //Button
-            //var parentAnim = new Animation();
-
-            //var squash = new Animation(d =>
-            //{
-            //     okButton.HeightRequest = d;
-
-            //},okButton.HeightRequest, okButton.HeightRequest - 20);
-            //parentAnim.Add(0, 1, squash);
-            //parentAnim.Commit(this, "animation",rate: 16,length: 4000);
-
 
             //TODO : How to use layoutTO
+            mariaMenu.Opacity = .5;
 
-            var rect = new Rect(Width - (50 + 10), Height - (50+ 10) , 50, 50);
-            var centerRect = new Rect(1, 1, 50, 50);
-            secondAbsolute.IsVisible = false;
-            await secondAbsolute.FadeTo(0);
-            frame1.IsVisible = false;
-            //secondAbsolute.Children.Remove(maria);
-            var lastBound = maria.Bounds;
-            mainAbsoluteLayout.Children.Add(maria);
-            await maria.LayoutTo(maria2.Bounds, 3000);
+            //Set to invisible
+            await fade.FadeTo(0);
+            fade.IsVisible = false;
 
+            mariaMenu.IsVisible = true;
+            var centered = new Rect(Width / 2 + mariaMenu.WidthRequest / 2, Height / 2 + mariaMenu.HeightRequest / 2, mariaMenu.Width, mariaMenu.Height);
 
+            mariaMenu.Layout(centered);
+            await mariaMenu.FadeTo(1,1000);
+            var rect2 = new Rect(maria2.X + 10, stackOrder.Y + stackOrderNow.Y + maria2.Y + maria2.Margin.Top, 50, 50);
+            await mariaMenu.LayoutTo(rect2, 1000,easing: Easing.SinInOut);
 
+            maria2.Opacity = 1;
+            mariaMenu.IsVisible = false;
+            
 
-            //AbsoluteLayout.SetLayoutBounds(maria, centerRect);
-            //AbsoluteLayout.SetLayoutFlags(maria, AbsoluteLayoutFlags.PositionProportional);
-            //await maria.LayoutTo(rect);
+      
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            fade.IsVisible = true;
+            _ =fade.FadeTo(1);
+            vm.Pedidos.Clear();
+            txtPopup.Text = "Your order was sucessfully made. Wait 30 minutes till it's done.";
+            maria2.Opacity = 0;
         }
     }
 }

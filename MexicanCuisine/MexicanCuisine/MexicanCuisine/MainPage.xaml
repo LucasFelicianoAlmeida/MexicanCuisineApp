@@ -62,19 +62,14 @@
                    VerticalOptions="StartAndExpand"
                    FontSize="37"
                    FontFamily="Title"/>
-
-                        <Frame BackgroundColor="White" Padding="24" CornerRadius="10"
+                    
+                    <Frame BackgroundColor="White" Padding="24" CornerRadius="10"
                    x:Name="frame1"
                    TranslationX="{Binding Source={x:Reference root},Path=Width}"
                    Margin="10"
-                   HasShadow="True"
-                   AnchorX=".50"
-                   AnchorY="1"
-                   
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
+                   HasShadow="True">
 
-                            <Image Source="https://image.flaticon.com/icons/png/512/1054/1054457.png"
+                            <Image Source="mexicanHat"
                    HeightRequest="50"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
@@ -154,82 +149,87 @@
 
 
 
-                <StackLayout Background="White" WidthRequest="150"
-                     HeightRequest="250"
+            <StackLayout Background="#EFEFEF" WidthRequest="150"
                      VerticalOptions="EndAndExpand"
-                     
+                         x:Name="stackOrder"
                     >
-                    <Frame CornerRadius="2"
+                <Frame CornerRadius="2" Margin="5"
                    HeightRequest="5"
                    Padding="0"
                    BackgroundColor="LightGray"
-                   Margin="4"
                    HorizontalOptions="Center"
                    WidthRequest="40"
                    HasShadow="False"/>
-                    <Frame Padding="10">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Static icons:Icons.Flag}"
+                <Frame Padding="10" Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Static icons:Icons.Flag}"
                        FontSize="30"
                            TextColor="#0B1B2D"
                        FontFamily="Icon"/>
-                            <Label Text="Orders"
+                        <Label Text="Order List"
                            TextColor="#0B1B2D"
                            FontSize="20"/>
-                        </StackLayout>
-                        <Frame.GestureRecognizers>
-                            <DropGestureRecognizer DragOverCommand="{Binding DropOverCommand}"/>
-                        </Frame.GestureRecognizers>
-                    </Frame>
-
-                    <CollectionView ItemsSource="{Binding Pedidos}"
-                                x:Name="Orders"
-                                Margin="10,0">
-                        <CollectionView.ItemsLayout>
-                            <GridItemsLayout Span="2" HorizontalItemSpacing="20" VerticalItemSpacing="10"  Orientation="Vertical"/>
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <views:TypeMealCardView />
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-
-                    </CollectionView>
-                <StackLayout Orientation="Horizontal">
-                    <Button Text="Order now" Margin="10,5,10,5"
+                    </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <DropGestureRecognizer DragOverCommand="{Binding DropOverCommand}"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <StackLayout Orientation="Horizontal" Margin="10,0"
+                             x:Name="stackOrderNow">
+                    <Button Text="Order now" 
+                            Clicked="Button_Clicked"
                             HorizontalOptions="FillAndExpand">
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
                                  Binding="{Binding Source={x:Reference Orders},Path=ItemsSource.Count}"
                                  Value="0">
-                                <Setter Property="IsVisible" Value="False"/>
+                                <Setter Property="Opacity" Value="0"/>
                             </DataTrigger>
                         </Button.Triggers>
                     </Button>
 
-                    <Image Source="https://img-premium.flaticon.com/png/512/1691/premium/1691045.png?token=exp=1629121985~hmac=586453f7f45d944a3db750f38fe3ce27"
+                    <Image Source="mexicana"
                            x:Name="maria2"
                            HeightRequest="50"
                            WidthRequest="50"
-                           Margin="10"
+                           Opacity="0"
                            HorizontalOptions="End">
-                        <Image.Triggers>
+                    </Image>
+                </StackLayout>
+
+                <CollectionView ItemsSource="{Binding Pedidos}" MinimumHeightRequest="150"
+                                x:Name="Orders" IsVisible="True"
+                                Margin="10,0">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Span="2" HorizontalItemSpacing="20" VerticalItemSpacing="10"  Orientation="Vertical"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <views:TypeMealCardView />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+     
+            </StackLayout>
+        </StackLayout>
+                        <!--<Image.Triggers>
                             <DataTrigger TargetType="Image"
                                          Binding="{Binding Source={x:Reference Orders}, Path=ItemsSource.Count}"
                                          Value="0">
                                 <Setter Property="IsVisible" Value="False"/>
                             </DataTrigger>
-                        </Image.Triggers>
-                    </Image>
-                </StackLayout>
+                        </Image.Triggers>-->
+        <Image Source="mexicana"  IsVisible="False"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+               HeightRequest="70"
+               WidthRequest="70"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                               x:Name="mariaMenu"/>
 
-            </StackLayout>
-
-            </StackLayout>
-       
         <AbsoluteLayout AbsoluteLayout.LayoutBounds="1,1,1,1"
                         BackgroundColor="#AA000000"
-                        x:Name="secondAbsolute"
+                        x:Name="fade"
                         IsVisible="True"
                         AbsoluteLayout.LayoutFlags="All">
             <Frame Margin="30"
@@ -237,14 +237,14 @@
                AbsoluteLayout.LayoutBounds=".5,.5"
                AbsoluteLayout.LayoutFlags="PositionProportional"
             >
-                <StackLayout>
                     <StackLayout >
                         <Label Text="Hi, I am Maria Bonita. Welcome back to Mexican Cuisine. Always remember...If you have any doubt always call me..."
+                               x:Name="txtPopup"
                        TextColor="#0B1B2D"/>
 
                         <Grid  ColumnDefinitions="*,*"
                              >
-                            <Image Source="https://img-premium.flaticon.com/png/512/1691/premium/1691045.png?token=exp=1629121985~hmac=586453f7f45d944a3db750f38fe3ce27"
+                            <Image Source="mexicana"
                                HeightRequest="70"
                                    WidthRequest="70"
                                x:Name="maria"
@@ -260,7 +260,6 @@
                             Margin="10"/>
                         </Grid>
                     </StackLayout>
-                </StackLayout>
             </Frame>
         </AbsoluteLayout>
     </AbsoluteLayout>
